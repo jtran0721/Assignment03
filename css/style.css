@@ -1,0 +1,395 @@
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  font-family: sans-serif;
+  padding: 20px 50px;
+}
+.section-title {
+  color: black;
+}
+/*******************************************************/
+/**                 BANNER SECTION                    **/
+/*******************************************************/
+#banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.banner-image {
+  position: relative;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.banner-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*******************************************************/
+/**                 NAV BAR                           **/
+/*******************************************************/
+
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+}
+
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #1d3557;
+  text-transform: uppercase;
+  border-style: 2px solid #aaacad;
+  padding: 20px 20px 20px 20px;
+}
+#nav-bar a:hover,
+a:active {
+  font-weight: bold;
+  cursor: grab;
+}
+.text-nav {
+  display: inline-block;
+  margin: 10px 70px 0;
+}
+.text-nav h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.text-nav span {
+  color: #bdc3c7;
+}
+.nav-icon {
+  stroke: #1d3557;
+  font-size: 24px;
+}
+.fa-user {
+  font-size: 24px;
+}
+
+.avatar {
+  content: "";
+  vertical-align: top;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  left: 13px;
+  top: -15px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*******************************************************/
+/**          PROFILE & SUMMARY                        **/
+/*******************************************************/
+
+.profile {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+}
+.profile-box {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+#target {
+  background: LightSkyBlue;
+  text-align: left;
+  padding: 20px 20px 20px 50px;
+}
+#target p {
+  text-align: justify;
+}
+#personal-info {
+  background: LightSalmon;
+  padding: 25px 20px;
+}
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 20px; /* Remove padding */
+  margin: 0; /* Remove margins */
+  line-height: 1.5;
+}
+
+/*******************************************************/
+/**                     JOB INFO                      **/
+/*******************************************************/
+
+/*Outer box for each section*/
+.box {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  /* box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07); */
+}
+/* .box .box {
+    background-color: #fff;
+    color: #444;
+    
+  } */
+
+/* Time for experience, education and activities*/
+.timeline {
+  font-size: 14px;
+  padding: 5px 0 15px 50px;
+}
+
+ul {
+  font-size: 16px;
+}
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li:before {
+  content: "-";
+  text-indent: 7px;
+  line-height: 1.7;
+  padding-left: 3px;
+}
+li span {
+  position: relative;
+  left: 5px;
+}
+
+/* This is the white blue bullets*/
+.bulletpoint {
+  padding: 10px 5px;
+  position: relative;
+  background-color: inherit;
+  width: 80%;
+  font-size: 16px;
+  padding-left: 40px;
+}
+
+.bulletpoint::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 13px;
+  background-color: white;
+  border: 2px solid #199cdb;
+  top: 17px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* Highlight text */
+.highlightext {
+  background-color: #199cdb;
+  border-radius: 10%;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* Hobbies section*/
+.hobbies {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  top: 25px;
+}
+
+/* Hobbies grid to store icons */
+.item1 {
+  grid-column: 1;
+  text-align: center;
+  height: 50px;
+}
+.item2 {
+  grid-column: 2;
+  text-align: center;
+  height: 50px;
+}
+.item3 {
+  grid-column: 3;
+  text-align: center;
+  height: 50px;
+}
+.item4 {
+  grid-column: 4;
+  text-align: center;
+  height: 50px;
+}
+.hobbies-icons {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+  z-index: 1;
+  -items: center;
+  text-align: center;
+}
+.hobbies-text {
+  position: relative;
+  top: 27%;
+  left: 0;
+}
+/* Hobbies names*/
+.description {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+/* Skills and Languages Section */
+.skill {
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+span.bar1 {
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: #2196f3;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+span.bar2 {
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: #aaacad;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+/*******************************************************/
+/**              Certificate and Awards               **/
+/*******************************************************/
+
+.awards-box {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.cert-image {
+  width: 250px;
+  height: 170px;
+}
+.certname {
+  font-size: 14px;
+  color: black;
+}
+
+ul {
+  font-size: 14px;
+}
+ul.dash {
+  list-style-type: none;
+  padding: 20px 5px;
+}
+
+ul.dash > li:before {
+  content: "-";
+  text-indent: 7px;
+  line-height: 1.7;
+  padding-left: 3px;
+}
+li span {
+  position: relative;
+  left: 5px;
+}
+/*******************************************************/
+/**                 PROJECTS SECTION                  **/
+/*******************************************************/
+
+.project-box {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+.projectrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, [col] 366px);
+  background-color: #f7f7f7;
+  color: #fff;
+}
+
+.project1 {
+  grid-column: col;
+  grid-row: row;
+}
+
+.project2 {
+  grid-column: col 2 / span 1;
+  grid-row: row;
+}
+
+.project3 {
+  grid-column: col 3 / span 1;
+  grid-row: row;
+}
+/* project image */
+.projimg {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+}
+
+.projname {
+  padding: 15px 15px 15px 25px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.projlob {
+  padding: 15px 15px 15px 25px;
+  color: #000;
+  border-bottom: 1px solid #dddddd;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  text-align: justify;
+}
+
+td {
+  border-bottom: 1px solid #dddddd;
+  text-align: justify;
+  padding: 10px;
+}
+/*******************************************************/
+/**                     FOOTER                        **/
+/*******************************************************/
+
+.footer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 50px;
+}
